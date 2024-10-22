@@ -1,4 +1,32 @@
-<h1>Terms and Conditions</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Import the required font using Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>UWUNOT</h1>
+            <ul>
+                <li><a href="../info">Info</a></li>
+                <li><a href="../aboutus">About US</a></li>
+                <li><a href="../terms">Terms</a></li>
+                <li><a href="../credits">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    section class="hero">
+<img src="https://uwunotislove.github.io/assets/uwunot.png" class="icon">
+              <h1>Terms and Conditions</h1>
+        
+<p>
+    Welcome to UWUNOT. By using our website, you agree to comply with and be bound by the following terms and conditions. Please review these terms carefully. If you do not agree to these terms, you should not use this website.
+</p>
+    </section>
+ <h1>Terms and Conditions</h1>
 <p>Last updated: October 22, 2024</p>
 <p>Please read these terms and conditions carefully before using Our Service.</p>
 <h2>Interpretation and Definitions</h2>
@@ -80,3 +108,294 @@ You agree that the original English text shall prevail in the case of a dispute.
 <ul>
 <li>By email: not733402@gmail.com</li>
 </ul>
+</section>
+<footer>
+<p>All Right Reserved | <a href="#"><span style="color: lightblue;">UWUNOT 2024</span></a></p>
+<br>
+<a href="terms.html">Terms and Conditions |</a><a href="privacy-policy.html">Privacy Policy</a>
+
+</footer>
+
+</body>
+</html>
+
+
+<style>
+/* General Styles - Mobile-first */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e2e2e;
+    padding: 15px;
+}
+
+footer{
+    background-color: #2e2e2e;
+    text-align: center;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer a{
+    color: lightblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.0em;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.ads p{
+    font-size: 0.6em;
+    text-align: center;
+}
+.ads {
+    background-color: #2e2e2e;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('https://www.rickgdps.xyz/files/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6); /* fallback background color */
+    color: white;
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 5.3em;
+}
+
+button {
+    background-color: #3b62f8;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2d4fc7;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 0.5em;
+}
+
+.features {
+    text-align: left;
+    padding: 40px 20px;
+}
+
+.features h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.features p {
+    font-size: 1em;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-message {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    animation: popupAnimation 0.5s;
+}
+
+.popup-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #3b62f8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 85%;
+}
+
+.popup-buttons button:hover {
+    background-color: #2d4fc7;
+}
+
+.popup-container.show {
+    display: flex;
+}
+
+.popup-container.exit {
+    animation: popupFadeOut 0.5s forwards;
+}
+
+@keyframes popupAnimation {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes popupFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; display: none; }
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #3b62f8, #2d4fc7);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* For tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    nav h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hero {
+        padding: 80px 40px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 0.6em;
+    }
+.hero img {
+    width: 8.3em;
+}
+
+    button {
+        padding: 25px 45px;
+        font-size: 1.8em;
+    }
+
+    .features h3 {
+        font-size: 1.7em;
+    }
+
+    .features p {
+        font-size: 0.7em;
+        max-width: 80%;
+    }
+}
+
+/* For desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    nav ul {
+        gap: 30px;
+    }
+
+     .hero {
+        padding: 100px 100px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero h2 {
+        font-size: 2.8em;
+    }
+
+    .hero p {
+        font-size: 0.8em;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+.hero img {
+    width: 7.3em;
+}
+
+    button {
+        padding: 18px 40px;
+        font-size: 1.2em;
+    }
+
+    .features {
+        padding: 60px 100px;
+    }
+
+    .features h3 {
+        font-size: 2em;
+    }
+
+    .features p {
+        font-size: 1.2em;
+        max-width: 50%;
+    }
+   .hero .note {
+        font-size: 0.8em;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+</style>
