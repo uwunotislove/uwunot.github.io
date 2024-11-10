@@ -1,365 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Import the required font using Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Success!</title>
+		<style>
+			body {
+				background-color: #f5f5f5;
+				margin-top: 8%;
+				color: #5d5d5d;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+					"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+					"Noto Color Emoji";
+				text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+				text-align: center;
+			}
 
-</head>
-<body>
-    <header>
-        <nav>
-            <span><a href="./">UWUNOT</a></span>
-            <ul>
-                <li><a href="../info">Info</a></li>
-                <li><a href="../aboutus">About US</a></li>
-                <li><a href="../terms">Terms</a></li>
-                <li><a href="../credits">Credits</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-<img src="https://uwunotislove.github.io/assets/uwunot.png" class="icon">
-        <h2>Welcome to UWUNOT!!</h2>
-        <p>UWUNOT is a NON-profit organazation owned by Not733402 Providing services for free and without any ads</p>
-        <p class="note">By viewing our website you agree to the terms and conditions of UWUNOT. <a href="../terms">Click here</a> to view the terms and conditions.</p>
-    </section>
+			h1 {
+				font-size: 2.45em;
+				font-weight: 700;
+				color: #5d5d5d;
+				letter-spacing: -0.02em;
+				margin-bottom: 30px;
+				margin-top: 30px;
+			}
 
+			.container {
+				width: 100%;
+				margin-right: auto;
+				margin-left: auto;
+			}
 
+			.animate__animated {
+				animation-duration: 1s;
+				animation-fill-mode: both;
+			}
 
+			.animate__fadeIn {
+				animation-name: fadeIn;
+			}
 
+			.info {
+				color: #5594cf;
+				fill: #5594cf;
+			}
 
+			.error {
+				color: #c92127;
+				fill: #c92127;
+			}
 
+			.warning {
+				color: #ffcc33;
+				fill: #ffcc33;
+			}
 
+			.success {
+				color: #5aba47;
+				fill: #5aba47;
+			}
 
-</section>
-<footer>
-<p>All Right Reserved | <a href="#"><span style="color: lightblue;">UWUNOT 2024</span></a></p>
-<br>
-<a href="terms.html">Terms and Conditions |</a><a href="privacy-policy.html">Privacy Policy</a>
+			.icon-large {
+				height: 132px;
+				width: 132px;
+			}
 
-</footer>
+			.description-text {
+				color: #707070;
+				letter-spacing: -0.01em;
+				font-size: 1.25em;
+				line-height: 20px;
+			}
 
-<div id="popupContainer" class="popup-container">
-    <div class="popup-message">
-        <p class="gradient-text">Join Discord Server</p>
-        <p>Do you want to our Discord Server for more info and other stuff</p>
-        <div class="popup-buttons">
-            <a href="https://discord.gg/BgzXfpXEGS" target="_blank">
-                <button onclick="join()">Join</button>
-            </a>
-            <br><br>
-            <button onclick="closePopup()">No Thanks</button>
-        </div>
-    </div>
-</div>
+			.footer {
+				margin-top: 40px;
+				font-size: 0.7em;
+			}
 
+			.animate__delay-1s {
+				animation-delay: 1s;
+			}
 
-<script>
-function join() {
-    const popupContainer = document.getElementById('popupContainer');
-    popupContainer.classList.add('exit');
-    setTimeout(() => {
-        popupContainer.style.display = 'none';
-    }, 500); // Matches the transition duration
-}
-
-function closePopup() {
-    const popupContainer = document.getElementById('popupContainer');
-    popupContainer.classList.add('exit');
-    setTimeout(() => {
-        popupContainer.style.display = 'none';
-    }, 500); // Matches the transition duration
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const popupContainer = document.getElementById('popupContainer');
-    popupContainer.classList.add('show');
-});
-
-</script>
-
-</body>
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="animate__animated animate__fadeIn">
+						<i class="success">
+							<svg
+								class="success icon-large fa-check-circle"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512"
+							>
+								<path
+									d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+								></path>
+							</svg>
+						</i>
+					</div>
+					<h1 class="animate__animated animate__fadeIn">Success!</h1>
+					<div class="description-text animate__animated animate__fadeIn animate__delay-1s">
+						<p>Your new web server is ready to use.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
-
-
-<style>
-/* General Styles - Mobile-first */
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #1c1c1c;
-    color: white;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #2e2e2e;
-    padding: 15px;
-}
-
-footer{
-    background-color: #2e2e2e;
-    text-align: center;
-    font-size: 0.8em;
-    text-decoration: none;
-}
-
-footer a{
-    color: lightblue;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h1 {
-    font-size: 1.0em;
-    color: white;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.ads p{
-    font-size: 0.6em;
-    text-align: center;
-}
-.ads {
-    background-color: #2e2e2e;
-}
-
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('https://www.rickgdps.xyz/files/bg2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.6); /* fallback background color */
-    color: white;
-}
-
-.hero h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 0.8em;
-    margin-bottom: 20px;
-}
-
-.hero img {
-    width: 5.3em;
-}
-
-button {
-    background-color: #3b62f8;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #2d4fc7;
-}
-
-.note {
-    margin-top: 20px;
-    font-size: 0.5em;
-}
-
-.features {
-    text-align: left;
-    padding: 40px 20px;
-}
-
-.features h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.features p {
-    font-size: 1em;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.popup-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.popup-message {
-    background-color: #2e2e2e;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    animation: popupAnimation 0.5s;
-}
-
-.popup-buttons button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #3b62f8;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 85%;
-}
-
-.popup-buttons button:hover {
-    background-color: #2d4fc7;
-}
-
-.popup-container.show {
-    display: flex;
-}
-
-.popup-container.exit {
-    animation: popupFadeOut 0.5s forwards;
-}
-
-@keyframes popupAnimation {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes popupFadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; display: none; }
-}
-
-.gradient-text {
-    background: linear-gradient(to right, #3b62f8, #2d4fc7);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-
-/* For tablets (min-width: 768px) */
-@media (min-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    nav h1 {
-        font-size: 1.5em;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    .hero {
-        padding: 80px 40px;
-        background-position: top;
-        background-size: cover;
-    }
-
-    .hero h2 {
-        font-size: 2.2em;
-    }
-
-    .hero p {
-        font-size: 0.6em;
-    }
-.hero img {
-    width: 8.3em;
-}
-
-    button {
-        padding: 25px 45px;
-        font-size: 1.8em;
-    }
-
-    .features h3 {
-        font-size: 1.7em;
-    }
-
-    .features p {
-        font-size: 0.7em;
-        max-width: 80%;
-    }
-}
-
-/* For desktops (min-width: 1024px) */
-@media (min-width: 1024px) {
-    nav ul {
-        gap: 30px;
-    }
-
-     .hero {
-        padding: 100px 100px;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .hero h2 {
-        font-size: 2.8em;
-    }
-
-    .hero p {
-        font-size: 0.8em;
-        max-width: 40%;
-        margin: 0 auto;
-    }
-.hero img {
-    width: 7.3em;
-}
-
-    button {
-        padding: 18px 40px;
-        font-size: 1.2em;
-    }
-
-    .features {
-        padding: 60px 100px;
-    }
-
-    .features h3 {
-        font-size: 2em;
-    }
-
-    .features p {
-        font-size: 1.2em;
-        max-width: 50%;
-    }
-   .hero .note {
-        font-size: 0.8em;
-        max-width: 60%;
-        margin: 0 auto;
-    }
-}
-</style>
-
